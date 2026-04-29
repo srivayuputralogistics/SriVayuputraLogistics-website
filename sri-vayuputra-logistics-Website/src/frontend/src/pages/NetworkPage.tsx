@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle, MapPin } from "lucide-react";
 import { motion } from "motion/react";
 import { useState } from "react";
+import { assetUrl } from "@/lib/utils";
 
 const STATES = [
   {
@@ -133,7 +134,7 @@ export default function NetworkPage() {
               className="bg-card rounded-2xl border border-border shadow-subtle p-4"
             >
               <img
-                src="/assets/images/india-map.png"
+                src={assetUrl("/assets/images/Network-India-Map.jpg")}
                 alt="India map showing Sri Vayuputra Logistics operational states across South India"
                 className="w-full object-contain rounded-lg"
                 style={{ maxHeight: "480px" }}

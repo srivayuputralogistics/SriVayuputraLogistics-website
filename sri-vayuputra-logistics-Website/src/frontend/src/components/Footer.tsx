@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Award, ExternalLink, Hash, Mail, MapPin, Phone } from "lucide-react";
+import { assetUrl } from "@/lib/utils";
 
 const QUICK_LINKS = [
   { label: "Home", href: "/" },
@@ -31,7 +32,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
               <img
-                src="/assets/images/Gemini_Generated_Image_7zhbcc7zhbcc7zhb.png"
+                src={assetUrl("/assets/images/Gemini_Generated_Image_7zhbcc7zhbcc7zhb.png")}
                 alt="Sri Vayuputra Logistics Logo"
                 className="w-9 h-9 rounded-full flex-shrink-0 object-cover"
               />

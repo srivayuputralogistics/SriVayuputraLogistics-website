@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "@tanstack/react-router";
+import { assetUrl } from "@/lib/utils";
 import {
   Award,
   BarChart3,
@@ -179,7 +180,7 @@ export default function HomePage() {
       >
         <div className="absolute inset-0">
           <img
-            src="/assets/generated/hero-logistics.dim_1400x700.jpg"
+            src={assetUrl("/assets/generated/hero-logistics.dim_1400x700.jpg")}
             alt="Sri Vayuputra Logistics fleet at modern warehouse"
             className="w-full h-full object-cover"
           />
@@ -411,7 +412,7 @@ export default function HomePage() {
             >
               <div className="bg-card rounded-2xl border border-border shadow-subtle p-4 w-full max-w-sm mx-auto">
                 <img
-                  src="/assets/images/india-map.png"
+                  src={assetUrl("/assets/images/Network-India-Map.jpg")}
                   alt="India map showing Sri Vayuputra Logistics operational states"
                   className="w-full object-contain rounded-lg"
                   style={{ maxHeight: "380px" }}

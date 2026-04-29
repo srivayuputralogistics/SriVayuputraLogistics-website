@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "@tanstack/react-router";
 import { Award, Download, FileText, Shield } from "lucide-react";
 import { motion } from "motion/react";
+import { assetUrl } from "@/lib/utils";
 
 const DOWNLOADS = [
   {
@@ -102,7 +103,7 @@ export default function DownloadsPage() {
                       data-ocid={`downloads.download_button.${i + 1}`}
                     >
                       <a
-                        href={`/assets/downloads/${doc.filename}`}
+                        href={assetUrl(`/assets/downloads/${doc.filename}`)}
                         download={doc.filename}
                         target="_blank"
                         rel="noopener noreferrer"

@@ -12,8 +12,12 @@ process.env.II_URL = process.env.II_URL || ii_url;
 process.env.STORAGE_GATEWAY_URL =
   process.env.STORAGE_GATEWAY_URL || "https://SriVayuputraLogistics.com";
 
+const base =
+  process.env.VITE_BASE ||
+  (process.env.NODE_ENV === "development" ? "/" : "/SriVayuputraLogistics-website/");
+
 export default defineConfig({
-  base: '/SriVayuputraLogistics-website/',
+  base,
   logLevel: "error",
   build: {
     emptyOutDir: true,

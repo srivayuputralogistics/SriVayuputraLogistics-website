@@ -3,6 +3,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Link, useRouterState } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { assetUrl } from "@/lib/utils";
 
 const NAV_ITEMS = [
   { label: "Home", href: "/" },
@@ -35,19 +36,19 @@ export default function Navbar() {
         {/* Logo */}
         <Link
           to="/"
-          className="flex items-center gap-2 min-w-0"
+          className="flex items-center gap-3 min-w-0"
           data-ocid="navbar.logo_link"
         >
           <img
-            src="/assets/images/Gemini_Generated_Image_7zhbcc7zhbcc7zhb.png"
+            src={assetUrl("/assets/images/Gemini_Generated_Image_7zhbcc7zhbcc7zhb.png")}
             alt="Sri Vayuputra Logistics Logo"
-            className="w-12 h-12 rounded-full flex-shrink-0 object-cover"
+            className="w-16 h-16 rounded-full flex-shrink-0 object-cover"
           />
           <div className="hidden sm:block min-w-0">
-            <div className="font-display font-bold text-sm leading-tight text-foreground truncate">
+            <div className="font-display font-bold text-base leading-tight text-foreground truncate">
               Sri Vayuputra Logistics
             </div>
-            <div className="text-xs text-muted-foreground leading-tight truncate">
+            <div className="text-sm text-muted-foreground leading-tight truncate">
               3PL &middot; 4PL &middot; Transport &middot; PET
             </div>
           </div>
@@ -103,13 +104,13 @@ export default function Navbar() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-72 pt-10">
-              <div className="flex items-center gap-2 mb-6 px-1">
+              <div className="flex items-center gap-3 mb-6 px-1">
                 <img
-                  src="/assets/images/Gemini_Generated_Image_7zhbcc7zhbcc7zhb.png"
+                  src={assetUrl("/assets/images/Gemini_Generated_Image_7zhbcc7zhbcc7zhb.png")}
                   alt="Sri Vayuputra Logistics Logo"
-                  className="w-10 h-10 rounded-full flex-shrink-0 object-cover"
+                  className="w-12 h-12 rounded-full flex-shrink-0 object-cover"
                 />
-                <span className="font-display font-bold text-sm">
+                <span className="font-display font-bold text-base">
                   Sri Vayuputra Logistics
                 </span>
               </div>
