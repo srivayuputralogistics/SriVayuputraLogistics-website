@@ -2187,19 +2187,19 @@ video {
 
 @font-face {
   font-family: "Space Grotesk";
-  src: url("/assets/fonts/SpaceGrotesk.woff2") format("woff2");
+  src: url("/SriVayuputraLogistics-website/assets/fonts/SpaceGrotesk.woff2") format("woff2");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Satoshi";
-  src: url("/assets/fonts/Satoshi.woff2") format("woff2");
+  src: url("/SriVayuputraLogistics-website/assets/fonts/Satoshi.woff2") format("woff2");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Geist Mono";
-  src: url("/assets/fonts/GeistMono.woff2") format("woff2");
+  src: url("/SriVayuputraLogistics-website/assets/fonts/GeistMono.woff2") format("woff2");
   font-display: swap;
 }
 

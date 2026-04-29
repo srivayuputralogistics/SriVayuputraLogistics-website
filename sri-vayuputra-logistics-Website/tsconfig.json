@@ -1,11 +1,29 @@
 {
   "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "strict": true,
-    "target": "ES2020",
     "experimentalDecorators": true,
-    "strictPropertyInitialization": false,
-    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
     "allowJs": true,
-    "outDir": "HACK_BECAUSE_OF_ALLOW_JS"
-  }
+    "jsx": "react-jsx",
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true
+  },
+  "include": [
+    "src/frontend/src/**/*.ts", 
+    "src/frontend/src/**/*.tsx",
+    "src/frontend/vite.config.js"
+  ],
+  "exclude": [
+    "node_modules", 
+    "dist", 
+    "src/backend"
+  ]
 }
