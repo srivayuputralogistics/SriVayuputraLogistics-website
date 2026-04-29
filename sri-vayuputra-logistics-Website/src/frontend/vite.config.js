@@ -13,7 +13,7 @@ process.env.STORAGE_GATEWAY_URL =
   process.env.STORAGE_GATEWAY_URL || "https://SriVayuputraLogistics.com";
 
 export default defineConfig({
-  base: '/SriVayuputraLogistics.com/',
+  base: '/SriVayuputraLogistics-website/',
   logLevel: "error",
   build: {
     emptyOutDir: true,
