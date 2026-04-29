@@ -36,7 +36,9 @@ jobs:
         run: pnpm install
 
       - name: Build
-        run: pnpm build
+        run: |
+          cd sri-vayuputra-logistics-Website/src/frontend
+          pnpm build
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
