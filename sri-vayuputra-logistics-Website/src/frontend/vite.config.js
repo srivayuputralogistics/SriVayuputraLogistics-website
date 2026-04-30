@@ -14,7 +14,7 @@ process.env.STORAGE_GATEWAY_URL =
 
 const base =
   process.env.VITE_BASE ||
-  (process.env.NODE_ENV === "development" ? "/" : "/SriVayuputraLogistics-website/");
+  (process.env.NODE_ENV === "development" ? "/" : "/");
 
 export default defineConfig({
   base,

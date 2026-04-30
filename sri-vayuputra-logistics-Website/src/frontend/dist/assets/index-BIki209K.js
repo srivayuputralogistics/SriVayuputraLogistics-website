@@ -33565,284 +33565,6 @@ function FloatingButtons() {
     }
   );
 }
-const QUICK_LINKS = [
-  { label: "Home", href: "/" },
-  { label: "About Us", href: "/about" },
-  { label: "Services", href: "/services" },
-  { label: "Network", href: "/network" },
-  { label: "Timeline", href: "/timeline" },
-  { label: "Clients", href: "/clients" },
-  { label: "Contact", href: "/contact" },
-  { label: "FAQ", href: "/faq" }
-];
-const SERVICES$2 = [
-  { label: "Transportation", href: "/services" },
-  { label: "3PL & 4PL Operations", href: "/services" },
-  { label: "Warehouse Management", href: "/services" },
-  { label: "PET Trading", href: "/services" },
-  { label: "Retail Fabrication", href: "/services" }
-];
-function Footer() {
-  const year = (/* @__PURE__ */ new Date()).getFullYear();
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("footer", { className: "bg-card border-t border-border", "data-ocid": "footer", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "container py-12 lg:py-16", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lg:col-span-1", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 mb-4", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "img",
-            {
-              src: "/assets/images/Gemini_Generated_Image_7zhbcc7zhbcc7zhb.png",
-              alt: "Sri Vayuputra Logistics Logo",
-              className: "w-9 h-9 rounded-full flex-shrink-0 object-cover"
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "font-display font-bold text-sm leading-tight", children: "Sri Vayuputra Logistics" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-xs text-muted-foreground", children: "Since 2016" })
-          ] })
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground leading-relaxed mb-4", children: "Trusted logistics partner delivering 3PL/4PL solutions, transportation, and warehouse operations across South India." }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-2 text-sm text-muted-foreground", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start gap-2", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(MapPin, { className: "w-4 h-4 mt-0.5 text-primary flex-shrink-0" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { children: [
-              "No.2729/48, Next to Pavithra School, Kumarswamy Layout, Rayaradoddi,",
-              /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
-              "Ramanagara-562159, Bangalore South Karnataka"
-            ] })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(Phone, { className: "w-4 h-4 text-primary flex-shrink-0" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx(
-              "a",
-              {
-                href: "tel:+91 83100 00628",
-                className: "hover:text-foreground transition-smooth",
-                children: "+91 83100 00628"
-              }
-            )
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(Mail, { className: "w-4 h-4 text-primary flex-shrink-0" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col", children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "srivayuputralogistics@hotmail.com" }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "srivayuputralogistics@outlook.com" }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "srivayuputralogistics@gmail.com" })
-            ] })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(Hash2, { className: "w-4 h-4 text-primary flex-shrink-0" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "GSTIN: 29DVKPS5115N2ZR" })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(Award, { className: "w-4 h-4 text-primary flex-shrink-0" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "MSME: UDYAM-KR-29-0007075" })
-          ] })
-        ] })
-      ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display font-semibold text-sm tracking-wide uppercase text-foreground mb-4", children: "Quick Links" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("ul", { className: "flex flex-col gap-2", children: QUICK_LINKS.map((link) => /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-          Link,
-          {
-            to: link.href,
-            className: "text-sm text-muted-foreground hover:text-primary transition-smooth",
-            "data-ocid": `footer.${link.label.toLowerCase().replace(/\s+/g, "_")}_link`,
-            children: link.label
-          }
-        ) }, link.href + link.label)) })
-      ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display font-semibold text-sm tracking-wide uppercase text-foreground mb-4", children: "Our Services" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("ul", { className: "flex flex-col gap-2", children: SERVICES$2.map((s2) => /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-          Link,
-          {
-            to: s2.href,
-            className: "text-sm text-muted-foreground hover:text-primary transition-smooth",
-            children: s2.label
-          }
-        ) }, s2.label)) })
-      ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display font-semibold text-sm tracking-wide uppercase text-foreground mb-4", children: "Operations" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("ul", { className: "flex flex-col gap-2 text-sm text-muted-foreground", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-center gap-2", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "w-2 h-2 rounded-full bg-primary flex-shrink-0" }),
-            "Karnataka (Primary)"
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-center gap-2", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "w-2 h-2 rounded-full bg-primary flex-shrink-0" }),
-            "Tamil Nadu"
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-center gap-2", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "w-2 h-2 rounded-full bg-primary flex-shrink-0" }),
-            "Andhra Pradesh"
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-center gap-2", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "w-2 h-2 rounded-full bg-primary flex-shrink-0" }),
-            "Telangana"
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-center gap-2", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "w-2 h-2 rounded-full bg-accent flex-shrink-0" }),
-            "Kerala (Selective)"
-          ] })
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mt-6", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
-          Link,
-          {
-            to: "/financial-performance",
-            className: "inline-flex items-center gap-1 text-sm font-medium text-primary hover:text-primary/80 transition-smooth",
-            "data-ocid": "footer.financials_link",
-            children: [
-              "View Financial Performance ",
-              /* @__PURE__ */ jsxRuntimeExports.jsx(ExternalLink, { className: "w-3 h-3" })
-            ]
-          }
-        ) })
-      ] })
-    ] }) }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "border-t border-border bg-muted/40", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "container flex flex-col sm:flex-row items-center justify-between gap-2 py-4 text-xs text-muted-foreground", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { children: [
-        "© ",
-        year,
-        " Sri Vayuputra Logistics. All rights reserved. GST & MSME Registered."
-      ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Developed By - SURAJ S PRASAD" })
-    ] }) })
-  ] });
-}
-function setRef(ref, value) {
-  if (typeof ref === "function") {
-    return ref(value);
-  } else if (ref !== null && ref !== void 0) {
-    ref.current = value;
-  }
-}
-function composeRefs(...refs) {
-  return (node) => {
-    let hasCleanup = false;
-    const cleanups = refs.map((ref) => {
-      const cleanup = setRef(ref, node);
-      if (!hasCleanup && typeof cleanup == "function") {
-        hasCleanup = true;
-      }
-      return cleanup;
-    });
-    if (hasCleanup) {
-      return () => {
-        for (let i = 0; i < cleanups.length; i++) {
-          const cleanup = cleanups[i];
-          if (typeof cleanup == "function") {
-            cleanup();
-          } else {
-            setRef(refs[i], null);
-          }
-        }
-      };
-    }
-  };
-}
-function useComposedRefs(...refs) {
-  return reactExports.useCallback(composeRefs(...refs), refs);
-}
-var REACT_LAZY_TYPE = Symbol.for("react.lazy");
-var use = React$4[" use ".trim().toString()];
-function isPromiseLike(value) {
-  return typeof value === "object" && value !== null && "then" in value;
-}
-function isLazyComponent(element) {
-  return element != null && typeof element === "object" && "$$typeof" in element && element.$$typeof === REACT_LAZY_TYPE && "_payload" in element && isPromiseLike(element._payload);
-}
-// @__NO_SIDE_EFFECTS__
-function createSlot$1(ownerName) {
-  const SlotClone = /* @__PURE__ */ createSlotClone$1(ownerName);
-  const Slot2 = reactExports.forwardRef((props, forwardedRef) => {
-    let { children, ...slotProps } = props;
-    if (isLazyComponent(children) && typeof use === "function") {
-      children = use(children._payload);
-    }
-    const childrenArray = reactExports.Children.toArray(children);
-    const slottable = childrenArray.find(isSlottable$1);
-    if (slottable) {
-      const newElement = slottable.props.children;
-      const newChildren = childrenArray.map((child) => {
-        if (child === slottable) {
-          if (reactExports.Children.count(newElement) > 1) return reactExports.Children.only(null);
-          return reactExports.isValidElement(newElement) ? newElement.props.children : null;
-        } else {
-          return child;
-        }
-      });
-      return /* @__PURE__ */ jsxRuntimeExports.jsx(SlotClone, { ...slotProps, ref: forwardedRef, children: reactExports.isValidElement(newElement) ? reactExports.cloneElement(newElement, void 0, newChildren) : null });
-    }
-    return /* @__PURE__ */ jsxRuntimeExports.jsx(SlotClone, { ...slotProps, ref: forwardedRef, children });
-  });
-  Slot2.displayName = `${ownerName}.Slot`;
-  return Slot2;
-}
-var Slot$2 = /* @__PURE__ */ createSlot$1("Slot");
-// @__NO_SIDE_EFFECTS__
-function createSlotClone$1(ownerName) {
-  const SlotClone = reactExports.forwardRef((props, forwardedRef) => {
-    let { children, ...slotProps } = props;
-    if (isLazyComponent(children) && typeof use === "function") {
-      children = use(children._payload);
-    }
-    if (reactExports.isValidElement(children)) {
-      const childrenRef = getElementRef$2(children);
-      const props2 = mergeProps$1(slotProps, children.props);
-      if (children.type !== reactExports.Fragment) {
-        props2.ref = forwardedRef ? composeRefs(forwardedRef, childrenRef) : childrenRef;
-      }
-      return reactExports.cloneElement(children, props2);
-    }
-    return reactExports.Children.count(children) > 1 ? reactExports.Children.only(null) : null;
-  });
-  SlotClone.displayName = `${ownerName}.SlotClone`;
-  return SlotClone;
-}
-var SLOTTABLE_IDENTIFIER$1 = Symbol("radix.slottable");
-function isSlottable$1(child) {
-  return reactExports.isValidElement(child) && typeof child.type === "function" && "__radixId" in child.type && child.type.__radixId === SLOTTABLE_IDENTIFIER$1;
-}
-function mergeProps$1(slotProps, childProps) {
-  const overrideProps = { ...childProps };
-  for (const propName in childProps) {
-    const slotPropValue = slotProps[propName];
-    const childPropValue = childProps[propName];
-    const isHandler = /^on[A-Z]/.test(propName);
-    if (isHandler) {
-      if (slotPropValue && childPropValue) {
-        overrideProps[propName] = (...args) => {
-          const result = childPropValue(...args);
-          slotPropValue(...args);
-          return result;
-        };
-      } else if (slotPropValue) {
-        overrideProps[propName] = slotPropValue;
-      }
-    } else if (propName === "style") {
-      overrideProps[propName] = { ...slotPropValue, ...childPropValue };
-    } else if (propName === "className") {
-      overrideProps[propName] = [slotPropValue, childPropValue].filter(Boolean).join(" ");
-    }
-  }
-  return { ...slotProps, ...overrideProps };
-}
-function getElementRef$2(element) {
-  var _a3, _b3;
-  let getter = (_a3 = Object.getOwnPropertyDescriptor(element.props, "ref")) == null ? void 0 : _a3.get;
-  let mayWarn = getter && "isReactWarning" in getter && getter.isReactWarning;
-  if (mayWarn) {
-    return element.ref;
-  }
-  getter = (_b3 = Object.getOwnPropertyDescriptor(element, "ref")) == null ? void 0 : _b3.get;
-  mayWarn = getter && "isReactWarning" in getter && getter.isReactWarning;
-  if (mayWarn) {
-    return element.props.ref;
-  }
-  return element.props.ref || element.ref;
-}
 function r(e) {
   var t, f, n = "";
   if ("string" == typeof e || "number" == typeof e) n += e;
@@ -33856,46 +33578,6 @@ function clsx() {
   for (var e, t, f = 0, n = "", o2 = arguments.length; f < o2; f++) (e = arguments[f]) && (t = r(e)) && (n && (n += " "), n += t);
   return n;
 }
-const falsyToString = (value) => typeof value === "boolean" ? `${value}` : value === 0 ? "0" : value;
-const cx = clsx;
-const cva = (base, config) => (props) => {
-  var _config_compoundVariants;
-  if ((config === null || config === void 0 ? void 0 : config.variants) == null) return cx(base, props === null || props === void 0 ? void 0 : props.class, props === null || props === void 0 ? void 0 : props.className);
-  const { variants, defaultVariants } = config;
-  const getVariantClassNames = Object.keys(variants).map((variant) => {
-    const variantProp = props === null || props === void 0 ? void 0 : props[variant];
-    const defaultVariantProp = defaultVariants === null || defaultVariants === void 0 ? void 0 : defaultVariants[variant];
-    if (variantProp === null) return null;
-    const variantKey = falsyToString(variantProp) || falsyToString(defaultVariantProp);
-    return variants[variant][variantKey];
-  });
-  const propsWithoutUndefined = props && Object.entries(props).reduce((acc, param) => {
-    let [key, value] = param;
-    if (value === void 0) {
-      return acc;
-    }
-    acc[key] = value;
-    return acc;
-  }, {});
-  const getCompoundVariantClassNames = config === null || config === void 0 ? void 0 : (_config_compoundVariants = config.compoundVariants) === null || _config_compoundVariants === void 0 ? void 0 : _config_compoundVariants.reduce((acc, param) => {
-    let { class: cvClass, className: cvClassName, ...compoundVariantOptions } = param;
-    return Object.entries(compoundVariantOptions).every((param2) => {
-      let [key, value] = param2;
-      return Array.isArray(value) ? value.includes({
-        ...defaultVariants,
-        ...propsWithoutUndefined
-      }[key]) : {
-        ...defaultVariants,
-        ...propsWithoutUndefined
-      }[key] === value;
-    }) ? [
-      ...acc,
-      cvClass,
-      cvClassName
-    ] : acc;
-  }, []);
-  return cx(base, getVariantClassNames, getCompoundVariantClassNames, props === null || props === void 0 ? void 0 : props.class, props === null || props === void 0 ? void 0 : props.className);
-};
 const CLASS_PART_SEPARATOR = "-";
 const createClassGroupUtils = (config) => {
   const classMap = createClassMap(config);
@@ -36358,6 +36040,327 @@ const twMerge = /* @__PURE__ */ createTailwindMerge(getDefaultConfig);
 function cn(...inputs) {
   return twMerge(clsx(inputs));
 }
+function assetUrl(path) {
+  return `${"/"}${path.replace(/^\//, "")}`;
+}
+const QUICK_LINKS = [
+  { label: "Home", href: "/" },
+  { label: "About Us", href: "/about" },
+  { label: "Services", href: "/services" },
+  { label: "Network", href: "/network" },
+  { label: "Timeline", href: "/timeline" },
+  { label: "Clients", href: "/clients" },
+  { label: "Contact", href: "/contact" },
+  { label: "FAQ", href: "/faq" }
+];
+const SERVICES$2 = [
+  { label: "Transportation", href: "/services" },
+  { label: "3PL & 4PL Operations", href: "/services" },
+  { label: "Warehouse Management", href: "/services" },
+  { label: "PET Trading", href: "/services" },
+  { label: "Retail Fabrication", href: "/services" }
+];
+function Footer() {
+  const year = (/* @__PURE__ */ new Date()).getFullYear();
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("footer", { className: "bg-card border-t border-border", "data-ocid": "footer", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "container py-12 lg:py-16", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lg:col-span-1", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 mb-4", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "img",
+            {
+              src: assetUrl("/assets/images/Gemini_Generated_Image_7zhbcc7zhbcc7zhb.png"),
+              alt: "Sri Vayuputra Logistics Logo",
+              className: "w-9 h-9 rounded-full flex-shrink-0 object-cover"
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "font-display font-bold text-sm leading-tight", children: "Sri Vayuputra Logistics" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-xs text-muted-foreground", children: "Since 2016" })
+          ] })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground leading-relaxed mb-4", children: "Trusted logistics partner delivering 3PL/4PL solutions, transportation, and warehouse operations across South India." }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-2 text-sm text-muted-foreground", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start gap-2", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(MapPin, { className: "w-4 h-4 mt-0.5 text-primary flex-shrink-0" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { children: [
+              "No.2729/48, Next to Pavithra School, Kumarswamy Layout, Rayaradoddi,",
+              /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
+              "Ramanagara-562159, Bangalore South Karnataka"
+            ] })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(Phone, { className: "w-4 h-4 text-primary flex-shrink-0" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "a",
+              {
+                href: "tel:+91 83100 00628",
+                className: "hover:text-foreground transition-smooth",
+                children: "+91 83100 00628"
+              }
+            )
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(Mail, { className: "w-4 h-4 text-primary flex-shrink-0" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "srivayuputralogistics@hotmail.com" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "srivayuputralogistics@outlook.com" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "srivayuputralogistics@gmail.com" })
+            ] })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(Hash2, { className: "w-4 h-4 text-primary flex-shrink-0" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "GSTIN: 29DVKPS5115N2ZR" })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(Award, { className: "w-4 h-4 text-primary flex-shrink-0" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "MSME: UDYAM-KR-29-0007075" })
+          ] })
+        ] })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display font-semibold text-sm tracking-wide uppercase text-foreground mb-4", children: "Quick Links" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("ul", { className: "flex flex-col gap-2", children: QUICK_LINKS.map((link) => /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+          Link,
+          {
+            to: link.href,
+            className: "text-sm text-muted-foreground hover:text-primary transition-smooth",
+            "data-ocid": `footer.${link.label.toLowerCase().replace(/\s+/g, "_")}_link`,
+            children: link.label
+          }
+        ) }, link.href + link.label)) })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display font-semibold text-sm tracking-wide uppercase text-foreground mb-4", children: "Our Services" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("ul", { className: "flex flex-col gap-2", children: SERVICES$2.map((s2) => /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+          Link,
+          {
+            to: s2.href,
+            className: "text-sm text-muted-foreground hover:text-primary transition-smooth",
+            children: s2.label
+          }
+        ) }, s2.label)) })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display font-semibold text-sm tracking-wide uppercase text-foreground mb-4", children: "Operations" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("ul", { className: "flex flex-col gap-2 text-sm text-muted-foreground", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-center gap-2", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "w-2 h-2 rounded-full bg-primary flex-shrink-0" }),
+            "Karnataka (Primary)"
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-center gap-2", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "w-2 h-2 rounded-full bg-primary flex-shrink-0" }),
+            "Tamil Nadu"
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-center gap-2", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "w-2 h-2 rounded-full bg-primary flex-shrink-0" }),
+            "Andhra Pradesh"
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-center gap-2", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "w-2 h-2 rounded-full bg-primary flex-shrink-0" }),
+            "Telangana"
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-center gap-2", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "w-2 h-2 rounded-full bg-accent flex-shrink-0" }),
+            "Kerala (Selective)"
+          ] })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mt-6", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          Link,
+          {
+            to: "/financial-performance",
+            className: "inline-flex items-center gap-1 text-sm font-medium text-primary hover:text-primary/80 transition-smooth",
+            "data-ocid": "footer.financials_link",
+            children: [
+              "View Financial Performance ",
+              /* @__PURE__ */ jsxRuntimeExports.jsx(ExternalLink, { className: "w-3 h-3" })
+            ]
+          }
+        ) })
+      ] })
+    ] }) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "border-t border-border bg-muted/40", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "container flex flex-col sm:flex-row items-center justify-between gap-2 py-4 text-xs text-muted-foreground", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { children: [
+        "© ",
+        year,
+        " Sri Vayuputra Logistics. All rights reserved. GST & MSME Registered."
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Developed By - SURAJ S PRASAD" })
+    ] }) })
+  ] });
+}
+function setRef(ref, value) {
+  if (typeof ref === "function") {
+    return ref(value);
+  } else if (ref !== null && ref !== void 0) {
+    ref.current = value;
+  }
+}
+function composeRefs(...refs) {
+  return (node) => {
+    let hasCleanup = false;
+    const cleanups = refs.map((ref) => {
+      const cleanup = setRef(ref, node);
+      if (!hasCleanup && typeof cleanup == "function") {
+        hasCleanup = true;
+      }
+      return cleanup;
+    });
+    if (hasCleanup) {
+      return () => {
+        for (let i = 0; i < cleanups.length; i++) {
+          const cleanup = cleanups[i];
+          if (typeof cleanup == "function") {
+            cleanup();
+          } else {
+            setRef(refs[i], null);
+          }
+        }
+      };
+    }
+  };
+}
+function useComposedRefs(...refs) {
+  return reactExports.useCallback(composeRefs(...refs), refs);
+}
+var REACT_LAZY_TYPE = Symbol.for("react.lazy");
+var use = React$4[" use ".trim().toString()];
+function isPromiseLike(value) {
+  return typeof value === "object" && value !== null && "then" in value;
+}
+function isLazyComponent(element) {
+  return element != null && typeof element === "object" && "$$typeof" in element && element.$$typeof === REACT_LAZY_TYPE && "_payload" in element && isPromiseLike(element._payload);
+}
+// @__NO_SIDE_EFFECTS__
+function createSlot$1(ownerName) {
+  const SlotClone = /* @__PURE__ */ createSlotClone$1(ownerName);
+  const Slot2 = reactExports.forwardRef((props, forwardedRef) => {
+    let { children, ...slotProps } = props;
+    if (isLazyComponent(children) && typeof use === "function") {
+      children = use(children._payload);
+    }
+    const childrenArray = reactExports.Children.toArray(children);
+    const slottable = childrenArray.find(isSlottable$1);
+    if (slottable) {
+      const newElement = slottable.props.children;
+      const newChildren = childrenArray.map((child) => {
+        if (child === slottable) {
+          if (reactExports.Children.count(newElement) > 1) return reactExports.Children.only(null);
+          return reactExports.isValidElement(newElement) ? newElement.props.children : null;
+        } else {
+          return child;
+        }
+      });
+      return /* @__PURE__ */ jsxRuntimeExports.jsx(SlotClone, { ...slotProps, ref: forwardedRef, children: reactExports.isValidElement(newElement) ? reactExports.cloneElement(newElement, void 0, newChildren) : null });
+    }
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(SlotClone, { ...slotProps, ref: forwardedRef, children });
+  });
+  Slot2.displayName = `${ownerName}.Slot`;
+  return Slot2;
+}
+var Slot$2 = /* @__PURE__ */ createSlot$1("Slot");
+// @__NO_SIDE_EFFECTS__
+function createSlotClone$1(ownerName) {
+  const SlotClone = reactExports.forwardRef((props, forwardedRef) => {
+    let { children, ...slotProps } = props;
+    if (isLazyComponent(children) && typeof use === "function") {
+      children = use(children._payload);
+    }
+    if (reactExports.isValidElement(children)) {
+      const childrenRef = getElementRef$2(children);
+      const props2 = mergeProps$1(slotProps, children.props);
+      if (children.type !== reactExports.Fragment) {
+        props2.ref = forwardedRef ? composeRefs(forwardedRef, childrenRef) : childrenRef;
+      }
+      return reactExports.cloneElement(children, props2);
+    }
+    return reactExports.Children.count(children) > 1 ? reactExports.Children.only(null) : null;
+  });
+  SlotClone.displayName = `${ownerName}.SlotClone`;
+  return SlotClone;
+}
+var SLOTTABLE_IDENTIFIER$1 = Symbol("radix.slottable");
+function isSlottable$1(child) {
+  return reactExports.isValidElement(child) && typeof child.type === "function" && "__radixId" in child.type && child.type.__radixId === SLOTTABLE_IDENTIFIER$1;
+}
+function mergeProps$1(slotProps, childProps) {
+  const overrideProps = { ...childProps };
+  for (const propName in childProps) {
+    const slotPropValue = slotProps[propName];
+    const childPropValue = childProps[propName];
+    const isHandler = /^on[A-Z]/.test(propName);
+    if (isHandler) {
+      if (slotPropValue && childPropValue) {
+        overrideProps[propName] = (...args) => {
+          const result = childPropValue(...args);
+          slotPropValue(...args);
+          return result;
+        };
+      } else if (slotPropValue) {
+        overrideProps[propName] = slotPropValue;
+      }
+    } else if (propName === "style") {
+      overrideProps[propName] = { ...slotPropValue, ...childPropValue };
+    } else if (propName === "className") {
+      overrideProps[propName] = [slotPropValue, childPropValue].filter(Boolean).join(" ");
+    }
+  }
+  return { ...slotProps, ...overrideProps };
+}
+function getElementRef$2(element) {
+  var _a3, _b3;
+  let getter = (_a3 = Object.getOwnPropertyDescriptor(element.props, "ref")) == null ? void 0 : _a3.get;
+  let mayWarn = getter && "isReactWarning" in getter && getter.isReactWarning;
+  if (mayWarn) {
+    return element.ref;
+  }
+  getter = (_b3 = Object.getOwnPropertyDescriptor(element, "ref")) == null ? void 0 : _b3.get;
+  mayWarn = getter && "isReactWarning" in getter && getter.isReactWarning;
+  if (mayWarn) {
+    return element.props.ref;
+  }
+  return element.props.ref || element.ref;
+}
+const falsyToString = (value) => typeof value === "boolean" ? `${value}` : value === 0 ? "0" : value;
+const cx = clsx;
+const cva = (base, config) => (props) => {
+  var _config_compoundVariants;
+  if ((config === null || config === void 0 ? void 0 : config.variants) == null) return cx(base, props === null || props === void 0 ? void 0 : props.class, props === null || props === void 0 ? void 0 : props.className);
+  const { variants, defaultVariants } = config;
+  const getVariantClassNames = Object.keys(variants).map((variant) => {
+    const variantProp = props === null || props === void 0 ? void 0 : props[variant];
+    const defaultVariantProp = defaultVariants === null || defaultVariants === void 0 ? void 0 : defaultVariants[variant];
+    if (variantProp === null) return null;
+    const variantKey = falsyToString(variantProp) || falsyToString(defaultVariantProp);
+    return variants[variant][variantKey];
+  });
+  const propsWithoutUndefined = props && Object.entries(props).reduce((acc, param) => {
+    let [key, value] = param;
+    if (value === void 0) {
+      return acc;
+    }
+    acc[key] = value;
+    return acc;
+  }, {});
+  const getCompoundVariantClassNames = config === null || config === void 0 ? void 0 : (_config_compoundVariants = config.compoundVariants) === null || _config_compoundVariants === void 0 ? void 0 : _config_compoundVariants.reduce((acc, param) => {
+    let { class: cvClass, className: cvClassName, ...compoundVariantOptions } = param;
+    return Object.entries(compoundVariantOptions).every((param2) => {
+      let [key, value] = param2;
+      return Array.isArray(value) ? value.includes({
+        ...defaultVariants,
+        ...propsWithoutUndefined
+      }[key]) : {
+        ...defaultVariants,
+        ...propsWithoutUndefined
+      }[key] === value;
+    }) ? [
+      ...acc,
+      cvClass,
+      cvClassName
+    ] : acc;
+  }, []);
+  return cx(base, getVariantClassNames, getCompoundVariantClassNames, props === null || props === void 0 ? void 0 : props.class, props === null || props === void 0 ? void 0 : props.className);
+};
 const buttonVariants = cva(
   "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",
   {
@@ -38431,20 +38434,20 @@ function Navbar() {
           Link,
           {
             to: "/",
-            className: "flex items-center gap-2 min-w-0",
+            className: "flex items-center gap-3 min-w-0",
             "data-ocid": "navbar.logo_link",
             children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx(
                 "img",
                 {
-                  src: "/assets/images/Gemini_Generated_Image_7zhbcc7zhbcc7zhb.png",
+                  src: assetUrl("/assets/images/Gemini_Generated_Image_7zhbcc7zhbcc7zhb.png"),
                   alt: "Sri Vayuputra Logistics Logo",
-                  className: "w-12 h-12 rounded-full flex-shrink-0 object-cover"
+                  className: "w-16 h-16 rounded-full flex-shrink-0 object-cover"
                 }
               ),
               /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "hidden sm:block min-w-0", children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "font-display font-bold text-sm leading-tight text-foreground truncate", children: "Sri Vayuputra Logistics" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-xs text-muted-foreground leading-tight truncate", children: "3PL · 4PL · Transport · PET" })
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "font-display font-bold text-base leading-tight text-foreground truncate", children: "Sri Vayuputra Logistics" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-sm text-muted-foreground leading-tight truncate", children: "3PL · 4PL · Transport · PET" })
               ] })
             ]
           }
@@ -38490,16 +38493,16 @@ function Navbar() {
               }
             ) }),
             /* @__PURE__ */ jsxRuntimeExports.jsxs(SheetContent, { side: "right", className: "w-72 pt-10", children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 mb-6 px-1", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3 mb-6 px-1", children: [
                 /* @__PURE__ */ jsxRuntimeExports.jsx(
                   "img",
                   {
-                    src: "/assets/images/Gemini_Generated_Image_7zhbcc7zhbcc7zhb.png",
+                    src: assetUrl("/assets/images/Gemini_Generated_Image_7zhbcc7zhbcc7zhb.png"),
                     alt: "Sri Vayuputra Logistics Logo",
-                    className: "w-10 h-10 rounded-full flex-shrink-0 object-cover"
+                    className: "w-12 h-12 rounded-full flex-shrink-0 object-cover"
                   }
                 ),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-display font-bold text-sm", children: "Sri Vayuputra Logistics" })
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-display font-bold text-base", children: "Sri Vayuputra Logistics" })
               ] }),
               /* @__PURE__ */ jsxRuntimeExports.jsxs("nav", { className: "flex flex-col gap-1", children: [
                 NAV_ITEMS.map((item) => /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -38532,6 +38535,10 @@ function Navbar() {
   );
 }
 function Layout() {
+  const routerState = useRouterState();
+  reactExports.useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, [routerState.location.pathname]);
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "min-h-screen flex flex-col bg-background", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(Navbar, {}),
     /* @__PURE__ */ jsxRuntimeExports.jsx("main", { className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Outlet, {}) }),
@@ -51311,7 +51318,7 @@ function DownloadsPage() {
                     children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
                       "a",
                       {
-                        href: `/assets/downloads/${doc.filename}`,
+                        href: assetUrl(`/assets/downloads/${doc.filename}`),
                         download: doc.filename,
                         target: "_blank",
                         rel: "noopener noreferrer",
@@ -51761,7 +51768,7 @@ function HomePage() {
             /* @__PURE__ */ jsxRuntimeExports.jsx(
               "img",
               {
-                src: "/assets/generated/hero-logistics.dim_1400x700.jpg",
+                src: assetUrl("/assets/generated/hero-logistics.dim_1400x700.jpg"),
                 alt: "Sri Vayuputra Logistics fleet at modern warehouse",
                 className: "w-full h-full object-cover"
               }
@@ -51955,7 +51962,7 @@ function HomePage() {
                 /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "bg-card rounded-2xl border border-border shadow-subtle p-4 w-full max-w-sm mx-auto", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
                   "img",
                   {
-                    src: "/assets/images/india-map.png",
+                    src: assetUrl("/assets/images/Network-India-Map.jpg"),
                     alt: "India map showing Sri Vayuputra Logistics operational states",
                     className: "w-full object-contain rounded-lg",
                     style: { maxHeight: "380px" }
@@ -52188,7 +52195,7 @@ function NetworkPage() {
                   /* @__PURE__ */ jsxRuntimeExports.jsx(
                     "img",
                     {
-                      src: "/assets/images/india-map.png",
+                      src: assetUrl("/assets/images/Network-India-Map.jpg"),
                       alt: "India map showing Sri Vayuputra Logistics operational states across South India",
                       className: "w-full object-contain rounded-lg",
                       style: { maxHeight: "480px" }
@@ -52788,7 +52795,7 @@ const routeTree = rootRoute.addChildren([
   downloadsRoute,
   faqRoute
 ]);
-const router = createRouter({ routeTree });
+const router = createRouter({ routeTree, scrollRestoration: true });
 function App() {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(RouterProvider, { router });
 }
