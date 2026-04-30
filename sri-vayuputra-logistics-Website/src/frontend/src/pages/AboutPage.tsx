@@ -193,19 +193,43 @@ export default function AboutPage() {
             </div>
             <div>
               <div className="bg-primary/5 border border-primary/20 rounded-xl p-6">
-                <Globe className="w-8 h-8 text-primary mb-4" />
-                <h3 className="font-display font-semibold text-lg text-foreground mb-3">
-                  Founder's Note
-                </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed italic">
-                  "We don't just move goods; we secure your supply chain under
-                  any conditions. Our commitment to reliability and operational
-                  excellence has been the cornerstone of every partnership we
-                  have built since 2016."
-                </p>
-                <p className="text-sm font-semibold text-foreground mt-4">
-                  — Mr. Srinivas Murthy A, Founder &amp; Sole Proprietor
-                </p>
+                <div className="grid gap-6 md:grid-cols-[auto_1fr] items-center">
+                  <div className="flex justify-center md:justify-start">
+                    <div className="w-28 h-28 rounded-full overflow-hidden border border-primary/20 shadow-sm">
+                      <img
+                        src="/assets/images/srinivas-murthy-profile-photo.png"
+                        alt="Mr. Srinivas Murthy A, Founder"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div className="flex items-center gap-3 mb-4 justify-center md:justify-start">
+                      <Globe className="w-8 h-8 text-primary" />
+                      <h3 className="font-display font-semibold text-lg text-foreground">
+                        Founder's Note
+                      </h3>
+                    </div>
+                    <p className="text-muted-foreground text-sm leading-relaxed italic">
+                      "We don't just move goods; we secure your supply chain under
+                      any conditions. Our commitment to reliability and operational
+                      excellence has been the cornerstone of every partnership we
+                      have built since 2016."
+                    </p>
+                    <p className="text-sm font-semibold text-foreground mt-4">
+                      — Mr. Srinivas Murthy A, Founder &amp; Sole Proprietor
+                    </p>
+                    <Button asChild className="mt-6">
+                      <a
+                        href="/vcard.html"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        View Founder Digital Card
+                      </a>
+                    </Button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
