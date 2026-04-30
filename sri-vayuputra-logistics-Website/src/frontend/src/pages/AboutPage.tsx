@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "@tanstack/react-router";
+import { assetUrl } from "@/lib/utils";
 import {
   Award,
   CheckCircle,
@@ -197,7 +198,7 @@ export default function AboutPage() {
                   <div className="flex justify-center md:justify-start">
                     <div className="w-28 h-28 rounded-full overflow-hidden border border-primary/20 shadow-sm">
                       <img
-                        src="/assets/images/srinivas-murthy-profile-photo.png"
+                        src={assetUrl("/assets/images/srinivas-murthy-profile-photo.png")}
                         alt="Mr. Srinivas Murthy A, Founder"
                         className="w-full h-full object-cover"
                       />
