@@ -46715,12 +46715,33 @@ function AboutPage() {
         /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground leading-relaxed mb-4", children: "Over the years, the company has grown into a trusted partner for transportation, 3PL/4PL operations, warehouse manpower support, and integrated logistics solutions across South India. Since November 2025, we have also diversified into PET granule import and 20-litre PET bottle distribution." }),
         /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground leading-relaxed", children: "Our operations are backed by an in-house ERP system designed to manage warehousing, transport planning, billing, and operational monitoring with high efficiency." })
       ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-primary/5 border border-primary/20 rounded-xl p-6", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Globe, { className: "w-8 h-8 text-primary mb-4" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display font-semibold text-lg text-foreground mb-3", children: "Founder's Note" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground text-sm leading-relaxed italic", children: `"We don't just move goods; we secure your supply chain under any conditions. Our commitment to reliability and operational excellence has been the cornerstone of every partnership we have built since 2016."` }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm font-semibold text-foreground mt-4", children: "— Mr. Srinivas Murthy A, Founder & Sole Proprietor" })
-      ] }) })
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "bg-primary/5 border border-primary/20 rounded-xl p-6", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid gap-6 md:grid-cols-[auto_1fr] items-center", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex justify-center md:justify-start", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-28 h-28 rounded-full overflow-hidden border border-primary/20 shadow-sm", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "img",
+          {
+            src: "/assets/images/srinivas-murthy-profile-photo.png",
+            alt: "Mr. Srinivas Murthy A, Founder",
+            className: "w-full h-full object-cover"
+          }
+        ) }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3 mb-4 justify-center md:justify-start", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(Globe, { className: "w-8 h-8 text-primary" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display font-semibold text-lg text-foreground", children: "Founder's Note" })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground text-sm leading-relaxed italic", children: `"We don't just move goods; we secure your supply chain under any conditions. Our commitment to reliability and operational excellence has been the cornerstone of every partnership we have built since 2016."` }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm font-semibold text-foreground mt-4", children: "— Mr. Srinivas Murthy A, Founder & Sole Proprietor" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { asChild: true, className: "mt-6", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "a",
+            {
+              href: "/vcard.html",
+              target: "_blank",
+              rel: "noreferrer",
+              children: "View Founder Digital Card"
+            }
+          ) })
+        ] })
+      ] }) }) })
     ] }) }) }),
     /* @__PURE__ */ jsxRuntimeExports.jsx("section", { className: "py-16 bg-muted/30", "data-ocid": "about.mission_section", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "container", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center mb-12", children: [
