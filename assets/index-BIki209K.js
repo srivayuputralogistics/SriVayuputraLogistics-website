@@ -36041,7 +36041,7 @@ function cn(...inputs) {
   return twMerge(clsx(inputs));
 }
 function assetUrl(path) {
-  return `${"/SriVayuputraLogistics-website/"}${path.replace(/^\//, "")}`;
+  return `${"/"}${path.replace(/^\//, "")}`;
 }
 const QUICK_LINKS = [
   { label: "Home", href: "/" },
