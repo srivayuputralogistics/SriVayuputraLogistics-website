@@ -46719,7 +46719,7 @@ function AboutPage() {
         /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex justify-center md:justify-start", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-28 h-28 rounded-full overflow-hidden border border-primary/20 shadow-sm", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
           "img",
           {
-            src: "/assets/images/srinivas-murthy-profile-photo.png",
+            src: assetUrl("/assets/images/srinivas-murthy-profile-photo.png"),
             alt: "Mr. Srinivas Murthy A, Founder",
             className: "w-full h-full object-cover"
           }
