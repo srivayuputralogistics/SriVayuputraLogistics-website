@@ -1,10 +1,12 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ExternalLink, Lock, Monitor } from "lucide-react";
+import { ExternalLink, Lock, Monitor, Settings } from "lucide-react";
 import { motion } from "motion/react";
+import { useNavigate } from "@tanstack/react-router";
 
 export default function LoginPage() {
+  const navigate = useNavigate();
   return (
     <div
       data-ocid="login.page"
@@ -22,15 +24,13 @@ export default function LoginPage() {
                 <Lock className="w-8 h-8 text-primary" />
               </div>
               <Badge className="mb-3 text-xs tracking-widest uppercase bg-primary/10 text-primary border-primary/20">
-                ERP Portal
+                Access Portal
               </Badge>
               <h1 className="font-display font-bold text-2xl text-foreground mb-3">
-                Access Your Dashboard
+                Choose Your Access
               </h1>
               <p className="text-muted-foreground text-sm leading-relaxed mb-8">
-                The Sri Vayuputra Logistics ERP system provides operational
-                management for transportation, warehouse, billing, and
-                monitoring.
+                Select the appropriate portal for your needs - ERP system access or content management.
               </p>
               <div className="flex flex-col gap-3">
                 <Button
@@ -48,6 +48,16 @@ export default function LoginPage() {
                   <Monitor className="w-4 h-4 mr-2" />
                   Login to ERP System
                   <ExternalLink className="w-4 h-4 ml-2" />
+                </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="w-full border-primary/20 text-primary hover:bg-primary/5 transition-smooth"
+                  onClick={() => navigate({ to: "/admin" })}
+                  data-ocid="login.admin_button"
+                >
+                  <Settings className="w-4 h-4 mr-2" />
+                  Admin Content Management
                 </Button>
                 <p className="text-xs text-muted-foreground">
                   Authorized personnel only. Contact your administrator for

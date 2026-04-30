@@ -8,33 +8,21 @@ export interface ContactSubmission {
   timestamp: bigint;
 }
 
-export interface NavItem {
-  label: string;
-  href: string;
-}
-
-export interface ServiceCard {
-  icon: string;
-  title: string;
-  description: string;
-  href: string;
-}
-
-export interface StatItem {
-  label: string;
-  value: string;
-  suffix?: string;
-}
-
-export interface TimelineEvent {
-  year: string;
-  title: string;
-  description: string;
-}
-
-export interface PartnerInfo {
+export interface Product {
+  id: string;
   name: string;
-  description: string;
-  period: string;
-  regions: string[];
+  imageUrl: string;
+  description?: string;
+  category?: string;
+  createdAt: bigint;
 }
+
+export interface Document {
+  id: string;
+  name: string;
+  docType: DocumentType;
+  url: string;
+  uploadedAt: bigint;
+}
+
+export type DocumentType = "profile" | "gst" | "msme";

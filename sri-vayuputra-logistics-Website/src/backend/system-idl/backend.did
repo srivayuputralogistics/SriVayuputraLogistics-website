@@ -1,0 +1,40 @@
+type ContactSubmission = record {
+  id : nat;
+  name : text;
+  email : text;
+  requirement : text;
+  message : text;
+  timestamp : int;
+  phone : text;
+};
+type Document = record {
+  id : text;
+  name : text;
+  docType : DocumentType;
+  url : text;
+  uploadedAt : int;
+};
+type DocumentType = variant {
+  profile;
+  gst;
+  msme;
+};
+type Product = record {
+  id : text;
+  name : text;
+  imageUrl : text;
+  description : opt text;
+  category : opt text;
+  createdAt : int;
+};
+service : {
+  getSubmissionCount : () -> (nat) query;
+  getSubmissions : () -> (vec ContactSubmission) query;
+  submitContact : (text, text, text, text, text) -> (nat);
+  addProduct : (text, text, opt text, opt text) -> (text);
+  getAllProducts : () -> (vec Product) query;
+  deleteProduct : (text) -> (bool);
+  addDocument : (text, DocumentType, text) -> (text);
+  getAllDocuments : () -> (vec Document) query;
+  deleteDocument : (text) -> (bool);
+}

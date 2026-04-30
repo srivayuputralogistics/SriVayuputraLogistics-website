@@ -6,6 +6,7 @@ import {
 } from "@tanstack/react-router";
 import Layout from "./components/Layout";
 import AboutPage from "./pages/AboutPage";
+import AdminPage from "./pages/AdminPage";
 import BusinessActivitiesPage from "./pages/BusinessActivitiesPage";
 import ClientsPage from "./pages/ClientsPage";
 import ContactPage from "./pages/ContactPage";
@@ -15,6 +16,7 @@ import FinancialPerformancePage from "./pages/FinancialPerformancePage";
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
 import NetworkPage from "./pages/NetworkPage";
+import ProductsPage from "./pages/ProductsPage";
 import ServicesPage from "./pages/ServicesPage";
 import TimelinePage from "./pages/TimelinePage";
 
@@ -80,6 +82,16 @@ const faqRoute = createRoute({
   path: "/faq",
   component: FaqPage,
 });
+const productsRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: "/products",
+  component: ProductsPage,
+});
+const adminRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: "/admin",
+  component: AdminPage,
+});
 
 const routeTree = rootRoute.addChildren([
   indexRoute,
@@ -94,6 +106,8 @@ const routeTree = rootRoute.addChildren([
   loginRoute,
   downloadsRoute,
   faqRoute,
+  productsRoute,
+  adminRoute,
 ]);
 
 const router = createRouter({ routeTree, scrollRestoration: true });
